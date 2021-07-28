@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/weather-favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/dceecd0eb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <nav>
+        <div class="logo">
+          <i class="far fa-sun"></i>
+          <h1>World Weather</h1>
+        </div>
+        <ul>
+          <li class="menu">
+            <i class="fas fa-bars"></i>
+
+            <ul class="dropdown-menu">
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">World </a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="The Weather in your town!"
+        />
+      </div>
+      <div class="place-suggestion">
+        <h2>Berlin, Germany</h2>
+        <i class="fas fa-cloud-sun"></i>
+        <span>23°C</span>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <article class="berlin">
+        <a href="./berlin.html"
+          ><div class="city-weather">
+            <div class="city-info">
+              <h3>Berlin, Germany</h3>
+              <span>9:24 PM</span>
+              <span>Sunny</span>
+            </div>
+            <div class="city-temperature">
+              <i class="fas fa-thermometer-full"><span>25°C</span> </i>
+            </div>
+            <div class="city-image">
+              <img src="./images/berlin.jpg" alt="berlin photo" />
+            </div></div
+        ></a>
+        <div class="city-weather-daily">
+          <table>
+            <tr class="daily-weather">
+              <td><span> Wed, Jul 21</span></td>
+              <td><i class="fas fa-cloud-rain"></i></td>
+              <td><p>light rain</p></td>
+            </tr>
+            <tr class="daily-weather">
+              <td><span>Thu, Jul 22</span></td>
+              <td><i class="fab fa-skyatlas"></i></td>
+              <td><p>Clear sky</p></td>
+            </tr>
+            <tr class="daily-weather">
+              <td><span>Fri, Jul 23</span></td>
+              <td><i class="fas fa-cloud"></i></td>
+              <td><p>broken clouds</p></td>
+            </tr>
+            <tr class="daily-weather">
+              <td><span>Sat, Jul 24</span></td>
+              <td><i class="fas fa-cloud-sun-rain"></i></td>
+              <td><p>light rain</p></td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    </main>
+
+    <footer>Copyright &copy; 2021</footer>
+  </body>
+</html>

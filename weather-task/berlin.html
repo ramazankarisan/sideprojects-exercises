@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/weather-favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/dceecd0eb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="berlin.css" />
+    <title>Berlin Weather</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i class="far fa-sun"></i>
+        <h1>World Weather</h1>
+      </div>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Weather…"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success px-1 mx-2" type="submit">
+          Search
+        </button>
+      </form>
+      
+      
+      <span class="navbar-text text-primary px-2">
+        Berlin, Germany 25°C
+      </span>
+    </nav>
+
+    <!-- main -->
+    <div class="d-flex justify-content-center my-4" id="top"><a  class="col-4 text-center "href="/Homeworks/Week5/ramazan/weather-task/index.html"> <button type="button" class="btn btn-success col-4 ">Main Page</button></a></div>
+    <main class="container-fluid row">
+      
+      <h2 class="text-center my-5">Berlin, Germany <span class="badge bg-danger">25°C</span></h2>
+      <section class=" my-4 col-md-6 col-12 col-lg-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <div class="col-12 d-flex justify-content-between">
+                  <h1>Day</h1>
+                  <div>
+                    <i class="far fa-sun"></i>
+                    <p class="d-inline fs-2 mx-2">25°C</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+              <div class="col-12 d-flex justify-content-between">
+                <h1>Morning</h1>
+                <div>
+                  <i class="far fa-sun"></i>
+                  <p class="d-inline fs-2 mx-2">25°C</p>
+                </div>
+              </div>
+                </div>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+              <div class="col-12 d-flex justify-content-between">
+                <h1>Afternoon</h1>
+                <div>
+                  <i class="far fa-sun"></i>
+                  <p class="d-inline fs-2 mx-2">25°C</p>
+                </div>
+              </div>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class=" my-4 col-md-6 col-lg-6 col-12">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <div class="col-12 d-flex justify-content-between">
+                  <h1>Night</h1>
+                  <div>
+                    <i class="fas fa-cloud fs-2"></i>
+                    <p class="d-inline fs-2 mx-2">25°C</p>
+                  </div>
+                </div>
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+              <div class="col-12 d-flex justify-content-between">
+                <h1>Evening</h1>
+                <div>
+                  <i class="fas fa-cloud fs-2"></i>
+                  <p class="d-inline fs-2 mx-2">25°C</p>
+                </div>
+              </div>
+                </div>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+              <div class="col-12 d-flex justify-content-between">
+                <h1>Overnight</h1>
+                <div>
+                  <i class="fas fa-cloud fs-2"></i>
+                  <p class="d-inline fs-2 mx-2">25°C</p>
+                </div>
+              </div>
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body row">
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Wind</h5>
+                    <p>9 km/h</p>
+                  </div>
+                  <div>
+                    <h5>wind gusts</h5>
+                    <p>20 km/h</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Precipitation</h5>
+                    <p>59%</p>
+                  </div>
+                  <div>
+                    <h5>Probability of Thunderstorms</h5>
+                    <p>24%</p>
+                  </div>
+                  <div></div>
+                </div>
+                <div class="col-6 panel">
+                  <div>
+                    <h5>Precipitation</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Rain</h5>
+                    <p>3.8 mm</p>
+                  </div>
+                  <div>
+                    <h5>Hours of Precipitation</h5>
+                    <p>1.5</p>
+                  </div>
+                  <div>
+                    <h5>Cloud of cover</h5>
+                    <p>84%</p>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container-fluid row  d-flex justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center align-items-center ">
+
+        <h1 class="text-center text-danger my-3">News</h1>
+        <div class=" col-12 col-md-6 col-lg-4 m-4 card d-flex flex-column align-items-center  text-center p-2" style="width: 18rem;height: 600px;">
+        <img src="./images/car-crash.jpeg" style="height: 200px;width: 200px;" class="card-img-top rounded" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">8 Dead...</h5>
+          <p class="card-text">At least eight people were killed and several others critically injured in a multi-vehicle crash in southeastern Utah Sunday afternoon.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 m-4 card d-flex flex-column align-items-center text-center p-2" style="width: 18rem;height: 600px;">
+        <img src="./images/hot-weather-temperatures.jpg" style="height: 200px;width: 200px;" class="card-img-top rounded" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <h5 class="card-title">Why has western heat been so intense? It boils down to 5 reasons</h5>
+          <p class="card-text">No other region in the country is warming faster than the western United States when it comes to increasing daytime highs, a trend that became apparent with the unprecedented and record-shattering heat wave that took over the Pacific Northwest earlier this summer.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 m-4 card d-flex flex-column align-items-center text-center p-2" style="width: 18rem;height: 600px;">
+          <img src="./images/meteor.jpg" style="height: 200px;width: 200px;" class="card-img-top rounded" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Twin meteor showers could spark fireballs to close out July</h5>
+            <p class="card-text">The last week of July will feature an astronomical double-header that will serve as an appetizer for one of the biggest night sky events of 2021.
+
+              Two meteor showers are set to peak on the night of July 28 and into the early morning of July 29, culminating in one of the few opportunities to see a meteor shower during the warm summer nights.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+          </div>
+      </div>
+    </div>
+    
+
+    <div class="d-flex justify-content-center my-4"><a  class="col-4 text-center "href="#top"> <button type="button" class="btn btn-success col-4 bg-warning "> <i class="fas fa-chevron-up"></i>  Top page  <i class="fas fa-chevron-up"></i></button></a></div>
+    <main class="container-fluid row">
+    <footer>Copyright &copy; 2021</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+@import "reset";
+@import "mixins";
+body {
+  background: linear-gradient(
+      0deg,
+      rgba(218, 214, 128, 0.8589810924369747) 29%,
+      rgba(238, 242, 180, 0.8421743697478992) 65%,
+      rgba(233, 235, 152, 0.9150035014005602) 100%
+    )
+    no-repeat 0 0 / cover;
+}
+// navbar
+.navbar {
+  border-bottom: 2px solid grey;
+  margin-bottom: 20px;
+}
+.notes-menu-list {
+  .dropdown-item {
+    @include menuItem;
+    &:hover i {
+      @include shineIt;
+    }
+  }
+}
+
+.account-menu-list {
+  .dropdown-item {
+    @include menuItem;
+    i {
+      margin-left: 0px;
+    }
+    &:hover i {
+      @include shineIt;
+    }
+  }
+}
+
+// banner
+.banner {
+  @include flexIt($justify: space-between);
+  .back-sign {
+    transition: transform 0.5s linear;
+    &:hover {
+      color: orangered;
+      transform: scale(1.2);
+    }
+    &:hover .fas {
+      border-right-color: orangered;
+    }
+    .fas {
+      border-right: 2px solid black;
+    }
+  }
+  .new-document {
+    @extend .back-sign;
+  }
+  @media screen and (max-width: 800px) {
+    .search-bar {
+      width: 50%;
+    }
+    .btn-sm {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+// main
+
+.main-container {
+  margin-bottom: 60px !important;
+  .main-item {
+    img {
+      height: 50%;
+    }
+    &:hover .card {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    }
+    &:hover .card img {
+      opacity: 0.6;
+    }
+  }
+}
+
+// buttons at the bottom
+.buttons-bottom {
+  margin-top: 20px;
+  height: 50px;
+  background: rgb(255, 205, 185);
+}
+
+.buttons {
+  .buttons-container {
+    height: 100%;
+    @include flexIt($justify: space-between);
+  }
+  i {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    transition: transform 0.5s;
+    &:hover {
+      color: red;
+      transform: scale(1.3);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    i {
+      font-size: 1rem;
+      padding: 0px 10px;
+    }
+  }
+}

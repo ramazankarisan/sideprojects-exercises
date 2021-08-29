@@ -1,0 +1,32 @@
+@mixin flexIt($justify: center, $align: center, $dir: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dir;
+}
+@mixin menuItem {
+  p {
+    display: inline-block;
+    width: 70%;
+  }
+  i {
+    margin-left: 15px;
+    font-size: 1.3rem;
+    vertical-align: baseline;
+    color: black;
+  }
+}
+@mixin shineIt {
+  color: brown;
+  font-weight: bold;
+}
+
+@mixin iconStyle {
+  font-size: 2rem;
+  padding: 10px 30px;
+  transition: transform 0.5s;
+  &:hover {
+    color: red;
+    transform: scale(1.3);
+  }
+}
